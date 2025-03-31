@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking System</title>
+    <style>
+        body {
+            background-image: url('airplane.jpg');
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 80px; 
+        }
+
+        p {
+            color: aliceblue;
+            text-align: center;
+            font-size: 40px; /* Changed from text-size-adjust (invalid) */
+        }
+
+        .button-13 {
+            background-color: #fff;
+            border: 1px solid #d5d9d9;
+            border-radius: 8px;
+            box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+            box-sizing: border-box;
+            color: #0f1111;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Amazon Ember", sans-serif;
+            font-size: 13px;
+            line-height: 29px;
+            padding: 0 10px 0 11px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 100px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .button-13:hover {
+            background-color: #f7fafa;
+        }
+
+        .button-13:focus {
+            border-color: #008296;
+            box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+            outline: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Treaheart Flight Booking</h1>
+    </header>
+
+    <section id="flight-booking"> 
+        <p>More Than a Flight, An Experience</p> 
+        <a href="booking.html">
+         <button class="button-13" role="button">Book With Us</button>
+         </a>
+    </section>
+
+
+    <script src="user.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>

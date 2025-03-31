@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Search Flights</h2>
+    <form id="search-form">
+
+        <div class="input-group">
+            <label for="origin">From:</label>
+            <input type="text" id="origin" placeholder="Enter origin">
+            <div id="origin-suggestions" class="suggestions"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="destination">To:</label>
+            <input type="text" id="destination" placeholder="Enter destination">
+            <div id="destination-suggestions" class="suggestions"></div>
+        </div>
+
+        <div class="input-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        </div>
+
+        <button type="submit">Search</button>
+    </form>
+    
+    <section id="flights">
+        <h2>Available Flights</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Airline</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                    <th>Departure Time</th>
+                    <th>Seats</th>
+                    <th>Price</th>
+                    <th>Book</th>
+                </tr>
+            </thead>
+            <tbody id="flights-list">
+            </tbody>
+        </table>
+    </section>
+    
+
+    <script src="user.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
